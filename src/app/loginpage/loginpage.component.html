@@ -1,0 +1,22 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-offset-5 col-md-3">
+      <div class="form-login">
+        <h4>Welcome back !!</h4>
+        <form (ngSubmit)="handleLogin();">
+          <input type="text" [(ngModel)]="username" name="username" id="userName" class="form-control input-sm chat-input" placeholder="Username" />
+          <br />
+          <input type="text" [(ngModel)]="password" name="password" id="userPassword" class="form-control input-sm chat-input"
+            placeholder="Password" />
+          <br />
+          <div class="wrapper">
+            <span class="group-btn">
+              <input type="submit" class="form-control btn btn-success btn-md" value="Login">
+            </span>
+          </div>
+        </form>
+      </div>
+
+    </div>
+  </div>
+</div>
