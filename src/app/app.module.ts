@@ -22,6 +22,7 @@ import {FormsModule} from '@angular/forms';
 import { SignuppageComponent } from './signuppage/signuppage.component';
 import { AuthguardGuard } from './authguard.guard';
 import { CurrencyconverterPipe } from './currencyconverter.pipe';
+import { HighlighterDirective } from './highlighter.directive';
 const routes=[
   {path:'',component:HomepageComponent},
   {path:'Movies',component:MoviepageComponent,canActivate:[AuthguardGuard]},
@@ -51,7 +52,8 @@ const routes=[
     HomepageComponent,
     LoginpageComponent,
     SignuppageComponent,
-    CurrencyconverterPipe
+    CurrencyconverterPipe,
+    HighlighterDirective
   ],
   imports: [
     BrowserModule,
