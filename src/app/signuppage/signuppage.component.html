@@ -3,19 +3,19 @@
       <div class="col-md-offset-5 col-md-3">
         <div class="form-login">
           <h4>Sign Up Page !!</h4>
-          <form>
-            <input type="text"  name="firstname" id="firstname" class="form-control input-sm chat-input" placeholder="First Name" />
+          <form (ngSubmit)="handleSignUp();">
+            <input type="text" [(ngModel)]="user.firstname" name="firstname" id="firstname" class="form-control input-sm chat-input" placeholder="First Name" />
             <br />
-            <input type="text"  name="lastname" id="lastname" class="form-control input-sm chat-input"
+            <input type="text"  [(ngModel)]="user.lastname" name="lastname" id="lastname" class="form-control input-sm chat-input"
               placeholder="Last Name" />
             <br />
-            <input type="text"  name="email" id="email" class="form-control input-sm chat-input"
+            <input type="text"  [(ngModel)]="user.email" name="email" id="email" class="form-control input-sm chat-input"
               placeholder="Email" />
             <br />
-            <input type="text"  name="phone" id="phone" class="form-control input-sm chat-input"
+            <input type="text" [(ngModel)]="user.phone" name="phone" id="phone" class="form-control input-sm chat-input"
               placeholder="Phone" />
             <br />
-            <input type="text"  name="country" id="country" class="form-control input-sm chat-input"
+            <input type="text"  [(ngModel)]="user.country" name="country" id="country" class="form-control input-sm chat-input"
               placeholder="Country" />
             <br />
             <div class="wrapper">
